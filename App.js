@@ -7,6 +7,5 @@ const Heading = React.createElement("div", { id: "container" }, [
 /*{how to style the h2}*/
 
 const h2 = "the mosr";
-console.log(Heading);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(Heading);

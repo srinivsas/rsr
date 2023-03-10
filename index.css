@@ -1,6 +1,134 @@
-/* #container {
-  background-color: blue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-h1 {
-  color: black;
-} */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid black;
+  background-color: lightgrey;
+}
+.nav-items > ul {
+  display: flex;
+  list-style-type: none;
+  margin: 30px;
+}
+.nav-items > ul > li {
+  padding: 10px;
+  text-decoration: none;
+}
+.logo {
+  width: 100px;
+  margin: 5px;
+}
+.resurent-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.resutent-card {
+  width: 254px;
+  height: 297px;
+  padding: 20px;
+  border: 1px solid lightgrey;
+  margin: 1rem !important;
+  transition: ease 0.5s;
+  position: relative;
+}
+.resutent-card:hover {
+  box-shadow: darkgray 0 5 15;
+}
+.resutent-card > img {
+  width: 100%;
+  height: 50%;
+}
+.resutent-card > h1 {
+  font-size: 17px;
+  font-weight: bold;
+  word-break: break-word;
+  text-align: left;
+}
+.resutent-card > h3 {
+  margin-top: 4px;
+  color: #686b78;
+  font-size: 13px;
+  display: flex;
+  max-width: 100%;
+}
+.rating {
+  width: 60px;
+  height: auto;
+  background-color: #db7c38;
+  position: absolute;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 2px 5px;
+  left: 2;
+  bottom: 2;
+  font-size: 10px;
+}
+.rating > h2 {
+  color: #fff;
+}
+.serchbox-container {
+  max-width: 500px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+}
+.serchbox-input {
+  height: 35px;
+  padding: 8px 16px;
+  font-size: 24px;
+  width: 100%;
+  max-width: 400px;
+  font-weight: 500;
+  border-radius: 6px;
+  line-height: 25px;
+  border: 1px solid lightslategrey;
+  background: #fff;
+  outline: none;
+  outline-color: red;
+}
+.serch-button {
+  height: 35px;
+  padding: 6px 10px;
+  margin-left: -60px;
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 150px;
+  display: inline;
+  cursor: pointer;
+}
+.serch-button:hover {
+  background-color: #3e8e41;
+}
+
+.fotter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightslategray;
+  color: white;
+  text-align: center;
+  z-index: auto;
+  height: 40px;
+}
+.footter > h1 {
+  position: center;
+  padding-top: 20px;
+}

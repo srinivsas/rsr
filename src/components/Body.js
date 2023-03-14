@@ -27,10 +27,10 @@ const Body = () => {
   }
   return (
     <>
-      <div className="serchbox-container">
+      <div className="max-w-lg items-center justify-center justify-items-center m-auto mt-3 flex">
         <input
           type="text"
-          className="serchbox-input"
+          className="h-9 px-2 py-4 text-base w-full max-w-lg font-medium rounded-md	border-1 border-black outline outline-2  outline-offset-2 "
           placeholder="search Resturant"
           value={searchInput}
           onChange={e => {
@@ -38,7 +38,7 @@ const Body = () => {
           }}
         />
         <button
-          className="serch-button"
+          className="h-10 px-6  rounded-xl rounded-tl-none rounded-bl-none -ml-20 bg-black text-white justify-center hover:bg-gray-500"
           onClick={() => {
             const data = searchRestaurant(searchInput, allRestaurants);
             setFltredRestaurents(data);
@@ -47,7 +47,7 @@ const Body = () => {
           search
         </button>
       </div>
-      <div className="resurent-list">
+      <div className="flex flex-wrap my-8 items-center justify-items-center content-center ">
         {allRestaurants.length === 0
           ? Array(10)
               .fill("")

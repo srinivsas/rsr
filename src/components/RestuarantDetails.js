@@ -11,11 +11,11 @@ const RestuarantDetails = () => {
   return (
     <div>
       {!resturent ? (
-        <div className="resutent-card">
+        <div className="w-64 h-72 p-5 border-2 m-4 transition relative hover:shadow flex-wrap">
           <Skeleton />
         </div>
       ) : (
-        <div className="resutent-card">
+        <div className="w-64 h-72 p-5 border-2 m-4 transition relative hover:shadow flex-wrap">
           <img
             src={`${IMG_CONFIG_URL}${resturent.cloudinaryImageId}`}
             alt={resturent.name}

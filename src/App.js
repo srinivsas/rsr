@@ -10,6 +10,7 @@ import "../index.css";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import RestuarantDetails from "./components/RestuarantDetails";
 import { lazy, Suspense } from "react";
+import InstaMart from "./components/InstaMart";
 const About = lazy(() => import("./components/About.js"));
 const AppLayout = () => {
   return (
@@ -43,6 +44,10 @@ const appRoute = createBrowserRouter([
       {
         path: "/",
         element: <Body />,
+      },
+      {
+        path: "/instamart",
+        element: <InstaMart />,
       },
       {
         path: "/contactus",
